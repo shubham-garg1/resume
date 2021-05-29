@@ -7,6 +7,17 @@
 
     <style> 
 
+        h3{
+            background-color: black;
+            color: white;
+            margin-right:33%;
+            margin-left:33%;
+        }
+
+        .skills{
+            padding-left: 2.5%;
+        }
+
         .header {
             position: fixed;
             top: 0;
@@ -47,7 +58,7 @@
         <div>
             <img src="image.PNG" alt="this is an image" class="picture" height="100px" width="auto">
             <h1> &nbsp;&nbsp;SHUBHAM GARG</h1>
-            <h3> &nbsp;&nbsp;&nbsp;&nbsp;Software Developer</h3>
+            <h2> &nbsp;&nbsp;&nbsp;Software Developer</h2>
         </div>
         <table border="1" bordercolor="green" bgcolor="lightyellow" width=99.5% cellpadding="10" cellspacing="0">
 
@@ -139,7 +150,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="skills">
                     <li>
                         <label for="file">C++: &nbsp;&nbsp;&nbsp;</label>
                         <progress id="file" value="91" max="100"> 91% </progress>
@@ -221,12 +232,20 @@
         <br>
 
         <form action="#" style="background-color:#c4d1e6; padding: 0.1% 2%;">
-            <h3>Contact me: </h3>
+            <h2>Contact me: </h2>
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" placeholder="Rohan">
             <br> <br>
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <input type="email" name="email" id="email" style="width: 15%;" placeholder="example@gmail.com">
+            <br> <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
             <br> <br>
             <label for="phone">Mobile Number: </label>
             <label for="browser"></label>
@@ -254,6 +273,8 @@
             <br>
             <input type="submit" value="Submit the form">
             <input type="reset" value="Reset everything">
+            <br>
+            <br>
 
         </form>
         
