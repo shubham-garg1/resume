@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Shubham Garg</title>
     </head>
-
     <style> 
-
+        html {
+        scroll-behavior: smooth;
+        }
         h3{
             background-color: black;
             color: white;
             margin-right:33%;
             margin-left:33%;
         }
-
         .skills{
             padding-left: 2.5%;
         }
-
         .header {
             position: fixed;
             top: 0;
@@ -25,42 +23,47 @@
             width: 100%;
             background-color: #f1f1f1;
         }
-
         .progress-container {
             width: 100%;
-            height: 5px;
+            height: 6px;
             background: #ccc;
         }
-
         .progress-bar {
-            height: 5px;
+            height: 6px;
             background: #db1b1b;
             width: 0%;
         }
-
         .picture{
             float: right;
             margin-right: 2%;
         }
-
+        .buttons{
+            position: fixed;
+            float: left;
+            margin-left: 43.5%;
+        }
+        .textarea *{
+            vertical-align: top;
+            padding-right: 1%;
+        }
     </style>
-
-
-    <!-- <body bgcolor="lightgreen"> -->
-    <!-- <body bgcolor="lightblue"> -->
-
     <body bgcolor="lightgrey" vlink="blue">
         <div class="header">    
             <div class="progress-container">
                 <div class="progress-bar" id="myBar"></div>
             </div>
         </div>
+        <div class="buttons"> 
+            <button><a href="#information">Information</a></button>
+            &nbsp; &nbsp; 
+            <button ><a href="#name">Contact</a></button>
+        </div>
         <div>
             <img src="https://lh3.googleusercontent.com/KWIkOrWnj6BogC0AILOw79MNvllTcgM07qDICd9fsw_04D574feXzPYjmI3Cerc1dNg88vq8yPYOiVDzf7beiwwxUiUYOAZAiMeb9WK0_k58y_efWCjXXHJzj1y9Q5RePyfkHwmr=w1920-h1080" alt="this is an image" class="picture" height="100px" width="auto">
             <h1> &nbsp;&nbsp;SHUBHAM GARG</h1>
             <h2> &nbsp;&nbsp;&nbsp;Software Developer</h2>
         </div>
-        <table border="1" bordercolor="green" bgcolor="lightyellow" width=99.5% cellpadding="10" cellspacing="0">
+        <table border="1" bordercolor="green" bgcolor="lightyellow" width=99.5% cellpadding="10" cellspacing="0" id="information">
 
             <tr>
                 <td width="33%" align="center">
@@ -70,7 +73,6 @@
                     <h3>ABOUT <br> </h3>
                 </td>
             </tr>
-
             <tr>
                 <td>
                     &nbsp; PHONE: 1234567890
@@ -93,8 +95,6 @@
                     and embedded systems. Experienced with the latest cutting-edge development tools and procedures.   Able
                     to effectively self-manage during independent projects, as well as collaborate as part of a productive
                     team.
-                    <!-- <br> <br>
-            &nbsp;  -->
                 </td>
             </tr>
             <br><br>
@@ -106,7 +106,6 @@
                     <h3>EDUCATION <br> </h3>
                 </td>
             </tr>
-
             <tr>
                 <td align="center">
                     <a href="https://www.linkedin.com/in/shubham-garg-181a7a1bb/" target="_blank">LinkedIn</a> <br> <br>
@@ -163,7 +162,6 @@
                         <label name="file" for="file">Java: &nbsp;&nbsp;&nbsp;</label>
                         <progress id="file" name="file" value="83" max="100"> 83% </progress>
                     </li>
-
                 </td>
                 <td align="center">
                     <h3>COURSES <br> </h3>
@@ -188,7 +186,6 @@
                         <br> <br>
                 </td>
             </tr>
-
             <tr>
                 <td>
                     <ul>
@@ -203,95 +200,60 @@
                         </li>
                     </ul>
                 </td>
-            </tr>
-
-            <!-- <div style="opacity: 90%; font-size: small;">
-                        PHONE: <br> 1234567890
-                        <br> <br>
-                        EMAIL: <br>
-                        shubhamkilastid@gmail.com
-                        <br> <br>
-                        EMAIL: <br>
-                        shubhamkilastid@gmail.com
-                        <br> <br>
-                        DATE OF BIRTH: <br>
-                        17-06-2002
-                        <br> <br>
-                        NATIONALITY: <br>
-                        Indian  
-                        <br> <br>
-                    </div>
-                </td>
-                <td colspan="2">
-                    <h3>PROFILE <br> </h3>
-                    Hardworking College Student seeking internship. Bringing forth a motivated attitude and a variety of powerful skills. Well-rounded and professional team player dedicated to continuing academic pursuits at a collegiate level. Experienced Software Developer adept in bringing forth expertise in design, installation, testing, and maintenance of software systems. Proficient in various platforms, languages, and embedded systems. Experienced with the latest cutting-edge development tools and procedures.   Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.
-                    <br> <br>
-                    &nbsp; -->
-
+            </tr>      
         </table>
         <br>
-
         <form action="#" style="background-color:#c4d1e6; padding: 0.1% 2%;">
             <h2>Contact me: </h2>
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Rohan">
-            <br> <br>
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" style="width: 15%;" placeholder="example@gmail.com">
-            <br> <br>
-            <label for="gender">Gender: </label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
-            <br> <br>
-            <label for="phone">Mobile Number: </label>
-            <label for="browser"></label>
-            <input list="browsers" name="browser" id="browser" style="width: 47px;" value="+91">
-
-            <datalist id="browsers">
-                <option value="+91">
-                <option value="+63">
-                <option value="+93">
-                <option value="+274">
-                <option value="+326">
-            </datalist>
-            <!-- <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> -->
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
-
-            <br> <br>
             <fieldset>
-                <legend>Message: </legend>
-                <!-- <textarea name="msg" id="msg" cols="160" rows="8"
-                    placeholder="Hi, this is Georgeand I am a DevOps Enginner at Google. I came across your resume online and I would like to offer you an interview referral at our company for the position of Software Developer. Please reply if interested. "></textarea> -->
-                <textarea name="msg" id="msg" cols="160" rows="8"
-                    placeholder="Hi, how are you?"></textarea>
+                <legend>Enter your details: </legend>
+                <br>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Rohan Kumar">
+                <br> <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" style="width: 15%;" placeholder="example@gmail.com">
+                <br> <br>
+                <label for="gender">Gender: </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br> <br>
+                <label for="phone">Mobile Number: </label>
+                <label for="browser"></label>
+                <input list="browsers" name="browser" id="browser" style="width: 47px;" value="+91">
+                <datalist id="browsers">
+                    <option value="+91">
+                    <option value="+63">
+                    <option value="+93">
+                    <option value="+274">
+                    <option value="+326">
+                </datalist>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                <br> <br>
+                <div class="textarea">
+                    <label for="msg" style="vertical-align: middle;">Message: </label>
+                    <textarea name="msg" id="msg" style="width: 60%;" rows="9" placeholder="Hi, how are you?" required></textarea>
+                </div>
+                <br>
             </fieldset>
-
             <br>
             <input type="submit" value="Submit the form">
             <input type="reset" value="Reset everything">
-            <br>
-            <br>
-
+            <br> <br>
         </form>
-        
-        <br>
-        <br>
-
+        <br> <br>
         <script>
             window.onscroll = function() {myFunction()};
-
             function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var winScroll =  document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
             }
         </script>
-        
-        
     </body>
 </html>
